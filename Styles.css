@@ -1,0 +1,58 @@
+﻿form {
+    font-family:Cambria, Perpetua;
+}
+
+header {
+    background-color: #666666;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: 30px;
+    font-family: felix Titling, cambria;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #E9C556;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+.NavigationPanel {
+    border-right: 2px solid #E9C556;
+    float: left;
+    width: 20%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: navajowhite;
+    direction: ltr;
+}
+.ContentPanel {
+    background-color:navajowhite;
+    height:100%;
+    overflow:auto;
+}
+.DictionaryPanel {
+    background-color: navajowhite;
+    height: 100%;
+    float:right;
+    width:40%;
+    height: 100%;
+}
+
+.body{
+    background-color:wheat;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+

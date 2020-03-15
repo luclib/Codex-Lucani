@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        Codex Lucani
+    </header>
+        <div class="background">
+           <div class="NavigationPanel">
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                <asp:TreeView NodeIndent="15" DataSourceID="SiteMapDataSource1" runat="server">
+                    <RootNodeStyle Font-Names="Felix Titling" />
+                    <NodeStyle  NodeSpacing="2" HorizontalPadding="5px"/>
+                    <LevelStyles>
+                        <asp:TreeNodeStyle />
+                        <asp:TreeNodeStyle Font-Bold="true" ChildNodesPadding="5" />
+                    </LevelStyles>
+                </asp:TreeView>
+                
+            </div>
+            <div class="ContentPanel">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode url="~/Home.aspx" title="Home"  description="Home Page">
+
+    <siteMapNode url="" title="Translator"  description="English-Latin Translator">
+      <siteMapNode url="~/SovTranslator.aspx" title="SOV Translator" description="Subject-Object-Verb Translator"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/Inflector.aspx" title="Inflector"  description="Latin Inflector">
+      <siteMapNode title="Decliners" description="Declines a noun or adjective">
+        <siteMapNode url="~/NounDecliner.aspx" title="Nouns" description="Decline a noun"/>
+        <siteMapNode url ="~/AdjectiveDecliner.aspx" title="Adjectives" description="Decline an adjective"/>
+      </siteMapNode>
+      <siteMapNode url="~/Conjugator.aspx" title="Conjugator" description="Conjugate verbs"/>
+    </siteMapNode>
+    
+    <siteMapNode url="~/Dictionary.aspx" title="Dictionary" description="Latin-English Dictionary"></siteMapNode>
+    
+  </siteMapNode>
+</siteMap>
